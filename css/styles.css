@@ -9,7 +9,6 @@ html {
 
 .container {
   width: 1200px;
-  outline: 2px solid tomato;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -140,7 +139,7 @@ ul {
 a {
   text-decoration: none;
 }
-img {
+*img {
   display: block;
 }
 /* Features */
@@ -173,7 +172,7 @@ img {
 }
 .item {
   border: #eeeeee solid 1px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .item-feature {
   flex-basis: calc(100% / 4 - 30px);
@@ -323,9 +322,6 @@ ul.list.portfolio-btn {
   padding-top: 94px;
   justify-content: center;
 }
-.item img {
-  margin-bottom: 20px;
-}
 
 .button-secondary {
   color: var(--title-text-color);
@@ -340,6 +336,10 @@ ul.list.portfolio-btn {
   padding: 6px, 22px;
   flex-direction: row;
 }
+.button-secondary:last-child {
+  margin-right: 0px;
+}
+
 .button-secondary:focus,
 .button-secondary:hover {
   color: var(--primary-background-color);
@@ -373,4 +373,12 @@ ul.list-of-exmp {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
+}
+
+.item li {
+  margin-bottom: 20px;
+}
+.list-of-exmp li:nth-child(n + 7) {
+  margin-bottom: 0px;
+  padding-bottom: 94px;
 }
