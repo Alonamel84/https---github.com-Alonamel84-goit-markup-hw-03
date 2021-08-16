@@ -427,10 +427,11 @@ ul.list.portfolio-btn {
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
-
-  /* margin-right: 8px; */
-  padding: 6px, 22px;
+  padding: 6px 22px;
   flex-direction: row;
+  border: transparent;
+  border-width: 1px;
+  border-radius: 4px;
 }
 .portfolio-btn li:not(:last-child) {
   
